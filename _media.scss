@@ -1,0 +1,26 @@
+
+
+@media (max-width: 575.98px) { 
+nav{
+    .hamburger{
+        display: block;
+        #logo{
+            position: fixed;
+            top: 8;
+        }
+    }
+    nav ul{
+        max-height: 0px;
+        background: black;
+        li{
+            width: 100%;
+            padding: 24px 0;
+        }
+    }
+    .menu{
+        max-height: 20em;
+        display: none;
+    }
+}
+    
+}

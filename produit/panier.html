@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orinoco - Voici le résumé de votre panier !">
+    <link href="css/produit.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e86bda96b6.js" crossorigin="anonymous"></script>
+    <title>Panier - Orinoco</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="hamburger">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <div class="menu">
+                <div id="logo"> <img src="Orinoco.png"  alt="logo orinoco" srcset=""> </div>
+                <ul>
+                    <li> <a href="../index.html">home</a> </li>
+                    <li><a href="../index.html">about</a></li>
+                    <li><a href="mailto:ornico@gmail.com">contact</a></li>
+                    <li><a href="produit.html">produits</a></li>
+                    <li class="cart">
+                        <a href="panier.html"> <i class="fas fa-shopping-basket" id="logo_panier"></i> panier <span id="span"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <table id="panier">
+        <thead>
+            <tr id="panier__commande">
+                <td id="name">Désignation</td>
+                <td id="price">Prix</td>
+                <td id="lentille">lentille</td>
+                <td id="quantity">Quantité</td>
+                <td id="totalPrice">Prix Total</td>
+                <td id="deleteProduct">Supprimer la ligne</td>
+            </tr>
+        </thead>
+        <tbody id="panier__body">
+        </tbody>
+        <tfoot id="prix__total">
+        </tfoot>
+    </table>
+
+    <form id="formulaire" method="post" action="confirmation.html">
+        <div class="nom__prenom">
+            <p>
+                <label for="lastName">Votre nom</label><br>
+                <input type="text" name="lastName" id="lastName" required size="20px" pattern="[A-Za-z àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ \s]{1,}" placeholder="Capa" title="Format : Capa">
+            </p>
+            <p>
+                <label for="firstName">Votre prénom</label><br>
+                <input type="text" name="firstName" id="firstName" required size="20px" pattern="[A-Za-z àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ \s]{1,}" placeholder="Robert" title="Format : Robert">
+            </p>
+        </div>
+        <div class="adresse__ville">
+            <p>
+                <label for="address">Votre adresse postale</label><br>
+                <input type="text" name="address" id="address" required pattern="[A-Za-z0-9\s]{5,}" placeholder="12 rue du photographe" title="Format : 12 rue du photographe">
+            </p>
+            <p>
+                <label for="city">CP et votre ville</label><br>
+                <input type="text" name="city" id="city" required size="20px" pattern="[0-9]{5}[A-Za-z\s]{2,}" placeholder="33000 Bordeaux" title="Format : 33000 Bordeaux">
+            </p>
+        </div>
+        <div class="adresse__mail--bouton">
+            <p>
+                <label for="email">Votre adresse mail</label><br>
+                <input type="email" name="email" id="email" required size="30px" placeholder="____.____@___.com">
+            </p>
+            <p>
+                <input id="bouton__validation" type="Submit" value="Envoyer">
+            </p>
+
+        </div>
+    </form>
+    <footer>
+        <div class="mention-1">
+                <h3>mention légales</h3>
+            </a>
+        </div>
+        <div class="__mention-2">
+            <p class="gauche">copyright tout droit réservé 2020-2021</p>
+        </div>
+    </footer>
+    <script src="js/panier.js"></script>
+</body>
+
+</html>
