@@ -161,7 +161,7 @@ function updateQte(eltId, action) {
         }
     }
 
-    let resultPrice = nvelleQte * price;
+    let resultPrice = nvelleQte * price;   
 
     productsLists[eltId].productQuantity = nvelleQte;
     qteElt.textContent = nvelleQte;

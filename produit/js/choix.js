@@ -53,8 +53,7 @@ result(url + '/' + cameraId).then(camera => {
         let storageCart = localStorage.getItem('cart');
         if (storageCart == null) {
             newCart = []
-            console.log('Initialisation')
-            console.log('Création du panier !');
+            console.log('Création du tableau !');
         } else {
             newCart = JSON.parse(storageCart)
             console.log('Récupération')
