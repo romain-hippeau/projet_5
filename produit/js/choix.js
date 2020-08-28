@@ -13,7 +13,6 @@ const prix = document.getElementById('prix__bloc');
 
 
 /* --------------METHODE FETCH RECUPERATION DES CARATERISTIQUE PRODUITS + RETOUR EN JSON -------------- */
-const url = 'http://localhost:3000/api/cameras'
 
 async function result(url) {
     let result = await fetch(url)

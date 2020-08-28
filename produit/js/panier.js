@@ -80,7 +80,6 @@ totalPrice.innerHTML = `<div id="blocPrixTotal"><p id="titrePrixTotal">Prix Tota
 
 /*----------DONNES FORMULAIRE ---- */
 let btnValidation = document.getElementById('bouton__validation');
- const push = "http://localhost:3000/api/cameras/order"
  /*----------CONDITION BOOLEAN POUR LE FORMULAIRE ---- */
 if (storageCart.length === 2 || somme === 0) {
 
@@ -113,7 +112,7 @@ if (storageCart.length === 2 || somme === 0) {
                 }
                 const myCart = { contact, products };
                 console.log("myCart", myCart);
-                envoieDonnee("http://localhost:3000/api/cameras/order", myCart)
+                envoieDonnee(urlPush, myCart)
             }
         });
     });

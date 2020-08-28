@@ -1,9 +1,7 @@
 
 /*-------APPEL API RECUPERATION DES DONNEES PRODUITS*/
-
 const cameraList = document.getElementById('camera_list');
 
-const url = 'http://localhost:3000/api/cameras'
 async function retrieveResult(url) {
     let result = await fetch(url)
     return result.json()
